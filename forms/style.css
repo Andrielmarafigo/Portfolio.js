@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Krona+One&family=Nosifer&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dd4803;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.estrutura_inicial {
+    border: 2px solid #000;       
+    border-radius: 5%;           
+    background-color: #c70606;
+}
+
+.estrutura_linha {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+.estrutura_form {
+    width: 40%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estrutura_form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #106430;
+}
+
+.estrutura_form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5100e7;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1cacb6;
+}
+
+
+.estrutura_grid {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+#grid {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#grid th {
+    text-align: center;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+}
+
+#grid td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#enviar {
+    background-color: #28a745;
+}
+
+#limpar {
+    background-color: #dc3545;
+}
