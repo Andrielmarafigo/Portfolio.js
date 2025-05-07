@@ -10,21 +10,27 @@
     <table class="estrutura_inicial">
         <tr class="estrutura_linha">
             <td class="estrutura_form">
-                <form id="formulario" action="">
+                <form id="formulario" action="enviar()" method="post">
                     <label for="nome" class="estrutura_lab">Nome</label>
                     <input type="text" name="nome" id="nome">
+
                     <label for="email">E-mail</label>
                     <input type="text" name="email" id="email">
+
                     <label for="fone"> Fone de Contato</label>
                     <input type="text" name="fone" id="fone">
+
                     <label for="mensagem">Escreva sua mensagem</label>
                     <input type="text" name="mensagem" id="mensagem">
+
                     <label for="data_cadastro">Data de Cadastro</label>
-                    <input type="text" name="data_cadastro" id="data_cadastro">
+                    <input type="data" name="data_cadastro" id="data_cadastro">
+
                     <label for="nome">Tipo de Contato</label>
                     <input type="text" name="tipo_contato" id="tipo_contato">
-                    <button id="enviar">enviar</button>
-                    <button id="limpar">limpar</button>   
+
+                    <button type="submit"id="enviar">Enviar</button>
+                    <button type="reset"id="limpar">Limpar</button>   
                 </form>
             </td>
             <td class="estrutura_grid">
