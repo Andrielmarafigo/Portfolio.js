@@ -3,59 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="./formulario.css">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
-    <table class="estrutura_inicial">
-        <tr class="estrutura_linha">
-            <td class="estrutura_form">
+    <table class="estrutura__inicial">
+        <tr class="estrutura__linha">
+            <td class="estrutura__form">
                 <form action="" method="post" onsubmit="contato.Enviar(event)">
-                    <div> 
-                        <label for="nome" class="estrutura_lab">Nome:</label>
-                        <input type="text" name="nome" id="nome" value="andriel" minlength="3" maxlength="255" required>
+                    <div>
+                        <label for="nome" class="estrutura__lab">Nome</label>
+                        <input type="text" name="nome" id="nome" minlength="3" maxlength="255" value="Padrao" required>
                     </div>
                     <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" value="email" required>
+                        <label for="email">e-Mail</label>
+                        <input type="email" name="email" id="email" value="email@email.com" required>
                     </div>
                     <div>
-                        <label for="fone"> Telefone de contato:</label>
-                        <input type="text" name="fone" id="fone" minlength="10" maxlength="17" required>
+                        <label for="fone">Fone de contato</label>
+                        <input type="text" name="fone" id="fone" minlength="10" value="23412341234" maxlength="17" required>
                     </div>
                     <div>
-                        <label for="mensagem">Escreva sua mensagem:</label>
-                        <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
-                    </div>
-                    <div>    
-                        <label for="data_cadastro">Data de Cadastro:</label>
-                        <input type="date" name="data_cadastro" id="data_cadastro">
+                        <label for="mensagem">Escreva sua mensagem</label><br>
+                        <textarea name="mensagem" id="mensagem" cols="85" rows="10" required>Texto da mensagem</textarea>
                     </div>
                     <div>
-                        <label for="tipo_contato">Tipo de contato:</label>
-                        <input type="radio" name="tipo_contato" id="email" value="email">
-                        <label for="email">E-mail</label>
-                        <input type="radio" name="tipo_contato" id="fone" value="fone">
-                        <label for="fone">Telefone</label>
-                        <input type="radio" name="tipo_contato" id="whatsapp" value="whatsapp">
-                        <label for="whatsapp">WhatsApp</label>
+                        <label for="data_cadastro">Data de cadastro</label><br>
+                        <input type="date" name="data_cadastro" id="data_cadastro" value="2025-05-20">
+                    </div>
+                    <div>
+                        <label for="tipo_contato">Selecione como será contatado pelo marketing</label><br>
+                        <input type="radio" name="tipo_contato" id="contato_email" value="Email">
+                        <label for="contato_email">Email</label>
+                        <input type="radio" name="tipo_contato" id="contato_fone" value="Ligacao">
+                        <label for="contato_fone">Ligação</label><br>
+                        <input type="radio" name="tipo_contato" id="contato_whats" value="Whatsapp">
+                        <label for="contato_whats">Whatsapp</label>
                     </div>
                     <div>
                         <button type="submit" id="enviar">Enviar</button>
-                        <button type="reset" id="limpar">Limpar</button>  
-                    </div>
+                        <button type="reset"  id="limpar">Limpar</button>
+                    </div>    
                 </form>
             </td>
-            <td class="estrutura_grid">
-                <table id="grid">
+            <td class="estrutura__grid">
+                <table class="grid">
                     <thead>
-                        <tr id="head_linha">
-                            <th id="h_nome">Nome</th>
-                            <th id="h_email">E-mail</th>
-                            <th id="h_fone">Telefone</th>
-                            <th id="h_mensagem">Mensagem</th>
-                            <th id="h_data_cadastro">Data_Cadastro</th>
-                            <th id="h_tipo_contato">Tipo_Contato</th>
+                        <tr class="head__linha">
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Fone</th>
+                            <th>Mensagem</th>
+                            <th>Cadastro</th>
+                            <th>Tipo Contato</th>
                         </tr>
                     </thead>
                     <tbody id="dados">
@@ -63,7 +63,7 @@
                 </table>
             </td>
         </tr>
-    </table>      
+    </table>
     <script type="text/javascript" src="formulario.js"></script>
 </body>
 </html>
